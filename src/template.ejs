@@ -23,44 +23,25 @@
   </style>
 
   <script>
-    document.addEventListener('DOMContentLoaded', function () {
+  document.addEventListener("DOMContentLoaded", function () {
+    var cy = (window.cy = cytoscape({
+      container: document.getElementById("cy"),
+      layout: {
+        name: "cola",
+        animate: false,
+        padding: 100,
+        fit: true,
+        nodeDimensionsIncludeLabels: true,
+        randomize: true,
+        nodeSpacing: function( node ){ return 50; },
+        flow: { axis: 'x', minSeparation: 256 }
+      },
+      style: fetch('cy-style.json').then(function(res){ return res.json(); }),
+      elements: fetch('<?=fileName?>').then(function(res){ return res.json(); }),
 
-      var cy = window.cy = cytoscape({
-        container: document.getElementById('cy'),
+    }));
+  });
 
-        layout: {
-          name: 'cola'
-        },
-
-        style: [
-          {
-            selector: 'node',
-            css: {
-              'background-color': '#268bd2'
-            }
-          },
-
-          {
-            selector: 'node:parent',
-            css: {
-              'border-color': '#cb4b16',
-              'background-color': '#002b36',
-              'background-opacity': 0.333
-            }
-          },
-
-          {
-            selector: 'edge',
-            css: {
-              'line-color': '#d33682'
-            }
-          }
-        ],
-
-        elements: <%- JSON.stringify(data) %>
-      });
-
-    });
   </script>
 </head>
 <body style="background: #002b36;">

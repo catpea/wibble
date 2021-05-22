@@ -1,1 +1,91 @@
-[{"group":"nodes","data":{"id":"src-index"}},{"group":"nodes","data":{"id":"test1","parent":"src-index"}},{"group":"edges","data":{"id":"src-index--test1","source":"src-index","target":"test1"}},{"group":"nodes","data":{"id":"test2","parent":"src-index"}},{"group":"edges","data":{"id":"src-index--test2","source":"src-index","target":"test2"}}]
+[
+  {
+    "group": "nodes",
+    "data": {
+      "label": "Wibble",
+      "id": "src-index"
+    }
+  },
+  {
+    "group": "nodes",
+    "data": {
+      "label": "File Processor",
+      "id": "file-processor"
+    }
+  },
+  {
+    "group": "edges",
+    "data": {
+      "label": "uses",
+      "id": "src-index--file-processor",
+      "source": "src-index",
+      "target": "file-processor"
+    }
+  },
+  {
+    "group": "nodes",
+    "data": {
+      "label": "Registry Saver",
+      "id": "registry-saver"
+    }
+  },
+  {
+    "group": "edges",
+    "data": {
+      "label": "uses",
+      "id": "file-processor--registry-saver",
+      "source": "file-processor",
+      "target": "registry-saver"
+    }
+  },
+  {
+    "group": "nodes",
+    "data": {
+      "label": "Static Assets",
+      "id": "static-assets"
+    }
+  },
+  {
+    "group": "edges",
+    "data": {
+      "label": "uses",
+      "id": "registry-saver--static-assets",
+      "source": "registry-saver",
+      "target": "static-assets"
+    }
+  },
+  {
+    "group": "nodes",
+    "data": {
+      "label": "Test 1 Module",
+      "id": "test1",
+      "parent": "src-index"
+    }
+  },
+  {
+    "group": "edges",
+    "data": {
+      "label": "connect",
+      "id": "src-index--test1",
+      "source": "src-index",
+      "target": "test1"
+    }
+  },
+  {
+    "group": "nodes",
+    "data": {
+      "label": "Test 2 Module",
+      "id": "test2",
+      "parent": "src-index"
+    }
+  },
+  {
+    "group": "edges",
+    "data": {
+      "label": "connect",
+      "id": "src-index--test2",
+      "source": "src-index",
+      "target": "test2"
+    }
+  }
+]

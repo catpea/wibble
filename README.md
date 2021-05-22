@@ -1,4 +1,6 @@
 # wibble
 Convert a repository to a useful graph.
 
-Used in creating cytoscape.js graphs.
+Flexible back of the envelope diagrams for all.
+
+![screenshot.png](screenshot.png)

@@ -1,0 +1,48 @@
+[
+  {
+    "selector": "node[label]",
+    "style": {
+      "label": "data(label)"
+    }
+  },
+  {
+    "selector": "edge[label]",
+    "style": {
+      "label": "data(label)",
+      "width": 3
+    }
+  },
+  {
+    "selector": ".top-center",
+    "style": {
+      "text-valign": "top",
+      "text-halign": "center"
+    }
+  },
+  {
+    "selector": "node",
+    "css": {
+      "min-zoomed-font-size": 8,
+      "color": "#d33682",
+      "background-color": "#268bd2"
+    }
+  },
+  {
+    "selector": "node:parent",
+    "css": {
+      "border-color": "#2aa198",
+      "background-color": "#002b36",
+      "background-opacity": 0.333
+    }
+  },
+  {
+    "selector": "edge",
+    "css": {
+      "min-zoomed-font-size": 8,
+      "color": "#cb4b16",
+      "line-color": "#657b83",
+      "target-arrow-shape": "triangle",
+      "line-opacity": 0.1
+    }
+  }
+]

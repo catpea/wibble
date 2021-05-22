@@ -20,5 +20,8 @@
   "bugs": {
     "url": "https://github.com/catpea/wibble/issues"
   },
-  "homepage": "https://github.com/catpea/wibble#readme"
+  "homepage": "https://github.com/catpea/wibble#readme",
+  "dependencies": {
+    "glob": "^7.1.7"
+  }
 }

@@ -1,7 +1,7 @@
 {
   "type": "module",
   "name": "wibble",
-  "version": "1.0.13",
+  "version": "1.0.14",
   "description": "Convert a repository to a useful graph.",
   "main": "index.js",
   "bin": {

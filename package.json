@@ -1,0 +1,21 @@
+{
+  "type":"module",
+  "name": "wibble",
+  "version": "1.0.2",
+  "description": "Convert a repository to a useful graph.",
+  "main": "index.js",
+  "scripts": {
+    "save": "git add .; git commit -m 'New Release'; git push; npm version patch; git push;"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/catpea/wibble.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/catpea/wibble/issues"
+  },
+  "homepage": "https://github.com/catpea/wibble#readme"
+}

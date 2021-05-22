@@ -6,5 +6,5 @@ const glob = util.promisify((await import("glob")).default);
 // extract tags
 // create graph
 
-const files = await glob("**/*.js", {});
+const files = await glob('**/*.js', {ignore: '**/node_modules/**'});
 console.log(files);

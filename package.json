@@ -22,6 +22,9 @@
   },
   "homepage": "https://github.com/catpea/wibble#readme",
   "dependencies": {
-    "glob": "^7.1.7"
+    "ejs": "^3.1.6",
+    "glob": "^7.1.7",
+    "json5": "^2.2.0",
+    "line-reader": "^0.4.0"
   }
 }

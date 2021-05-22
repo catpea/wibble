@@ -5,7 +5,7 @@
   "description": "Convert a repository to a useful graph.",
   "main": "index.js",
   "scripts": {
-    "save": "git add .; git commit -m 'New Release'; git push; npm version patch; git push;"
+    "save": "git add .; git commit -m 'New Release'; git push; npm version patch; npm publish; git push;"
   },
   "repository": {
     "type": "git",
